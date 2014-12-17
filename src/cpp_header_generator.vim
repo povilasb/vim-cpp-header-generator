@@ -8,7 +8,7 @@
 function Cpp_print_header_guard_skeleton()
 	let header_guard_name = "HEADER_HPP"
 	let str_header_guard = ["#ifndef " . header_guard_name,
-		\"#define " . header_guard_name . " 1",
+		\"#define " . header_guard_name,
 		\"",
 		\"#endif /* " . header_guard_name . " */"]
 	call setline(line("$"), str_header_guard)
